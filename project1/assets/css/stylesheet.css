@@ -9,13 +9,13 @@ nav {
 }
 
 #landingpage {
-    font-size: 60px;
+    font-size: 70px;
     padding: 0px 70px 0px 20px; /*top, right, bottom, left*/ 
     color: #000;
 } /*used on beginning nav page, make sure everything size-wise is mimicked across all iterations*/
 
 #versions {
-    font-size: 70px;
+    font-size: 100px;
     padding: 0px 70px 0px 20px;
     color: #ffffff;
 }
@@ -43,24 +43,3 @@ nav {
     padding-right: 70px;
     padding-bottom: 70px;
 }
-
-
-
-div {
-    /* width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: red; */
-    animation-name: example;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
-
-/* #entire:hover { 
-    background-color: yellow;
-} 
-
-.begin {
-    color: #000;
-    position: absolute;
-} */
