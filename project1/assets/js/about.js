@@ -1,0 +1,1 @@
+window.confirm("welcome to ouroboros, a collection of beginnings. \n The story continues below");

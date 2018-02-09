@@ -1,0 +1,60 @@
+body {
+    background: #ffffff;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: bold;
+}
+
+nav {
+    color: #ffffff;
+}
+
+#landingpage {
+    font-size: 60px;
+    padding: 0px 70px 0px 20px; /*top, right, bottom, left*/ 
+    color: #000;
+} /*used on beginning nav page, make sure everything size-wise is mimicked across all iterations*/
+
+#versions {
+    font-size: 60px;
+    padding: 0px 70px 0px 20px;
+    color: #ffffff;
+}
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  transform: translateY(-8px);
+}
+
+
+
+div {
+    /* width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red; */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+/* #entire:hover { 
+    background-color: yellow;
+} 
+
+.begin {
+    color: #000;
+    position: absolute;
+} */
