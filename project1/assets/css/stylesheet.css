@@ -38,6 +38,11 @@ nav {
   transform: translateY(-8px);
 }
 
+#snek {
+    float: right;
+    padding-right: 70px;
+}
+
 
 
 div {
