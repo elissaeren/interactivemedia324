@@ -1,0 +1,49 @@
+body {
+    background: #ffffff;
+    font-family: "VCR OSD Mono", sans-serif;
+}
+
+.one {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 0px 0px 0px 0px ; /* top right bottom left */
+}
+
+.list-one {
+    
+}
+
+.buttons {
+    font-size: 30px;
+}
+
+#continue {
+    width: 160px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px; /* adds rounded corner to border */
+    padding: 7px 10px 9px 10px ; /* top right bottom left */
+    text-align: center; /* this centers the text within the bordered box */
+    margin: auto; /* this centers the id on the page */
+}
+
+#continue:hover { 
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#quit {
+    width: 160px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px; /* adds rounded corner to border */
+    padding: 7px 10px 9px 10px ; /* top right bottom left */ 
+    text-align: center; /* this centers the text within the bordered box */
+    margin: auto; /* this centers the id on the page */
+}
+
+#quit:hover { 
+    background-color: #000000;
+    color: #ffffff;
+}
