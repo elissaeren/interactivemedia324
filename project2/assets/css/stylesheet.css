@@ -3,21 +3,21 @@ body {
     font-family: "VCR OSD Mono", sans-serif;
 }
 
-/* .one {
-    width: 500px;
-    height: 500px;
-    margin: auto;
-    padding: 0px 0px 0px 0px ;
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url('fonts/VCR_OSD_MONO_1.001.ttf');
+    src: 
+	   url('fonts/VCR_OSD_MONO_1.001.otf') 
+	   format('opentype');
+    src: 
+	   url('fonts/VCR_OSD_MONO_1.001.ttf') 
+	   format('truetype');
 }
-
-.list-one {
-    
-} */
 
 .videoPlayer {
     margin: auto;
     text-align: center; /* centered content on page */
-    padding: 10px 0px 10px 0px ; /* top right bottom left */
+    padding: 70px 0px 10px 0px ; /* top right bottom left */
 }
 
 .buttons {
