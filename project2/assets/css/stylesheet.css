@@ -4,14 +4,12 @@ body {
 }
 
 @font-face {
-    font-family: 'VCR OSD Mono';
-    src: url('fonts/VCR_OSD_MONO_1.001.ttf');
-    src: 
-	   url('fonts/VCR_OSD_MONO_1.001.otf') 
-	   format('opentype');
-    src: 
-	   url('fonts/VCR_OSD_MONO_1.001.ttf') 
-	   format('truetype');
+    font-family: "VCR OSD MONO";
+    src: url("../fonts/VCR_OSD_MONO_1.001.ttf") /* TTF file for CSS3 browsers */
+}
+
+p.customfont { 
+    font-family: "VCR OSD Mono", sans-serif;
 }
 
 .videoPlayer {
