@@ -132,5 +132,15 @@
                 var selection = Math.round(Math.random() * maxVideo);
                 document.getElementById("my_video_player").src = video[selection];
             });
+            
+            import myfont from 'path/to/font.ttf';
+                injectGlobal`
+                @font-face {
+                font-family: 'VCR OSD Mono';
+                src: url(${myFont}) format('truetype');
+                font-weight: normal;
+                font-style: normal;
+                }
+                `;
         </script>
     </body>
