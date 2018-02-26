@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // list one content
 			var one = [
-                "",
+                [0] = <video controls autoplay><source src="images/nathandrake.mp4" type="video/mp4"></video>
 			];
 
 			// This is a very common randomizing function.
