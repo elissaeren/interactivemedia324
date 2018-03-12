@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" crussontent="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    
+	<title>you are an audience</title>
+	
+	<!-- 
+	***** START CSS ***** 
+	-->
+	<style>
+
+		/* You can change the colors, font, and so on below */
+
+		body {
+			background: #ffe9ec;
+			margin-left: 3%;
+            margin-right: 15%;
+            margin-top: 8%;
+            
+            color: #ffffff;
+            font-family: 'Inconsolata', monospace;
+			font-size: 150px;
+            line-height: 90px;
+			letter-spacing: 4px;
+            text-align: right;
+			/*text-transform: uppercase;*/
+		}
+        
+        .nav {
+            margin-top: 1%;
+            
+            color: #000000;
+            font-family: 'Inconsolata', monospace;
+			font-size: 20px;
+            line-height: 90px;
+            text-align: center;
+            letter-spacing: -.01em;
+            text-transform: uppercase;
+        }
+
+		.list-one {
+		}
+
+		.list-two {
+		}
+
+		.list-three {
+		}
+
+		.list-four {
+		}
+        
+        .list-five {
+		}
+        
+        .list-six {
+		}
+        
+        .list-seven {
+		}
+
+		p {
+			margin-bottom: 2em;
+		}
+        
+        /* Media Queries */
+
+        @media screen and (max-width: 1024px) {
+            body {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                margin-left: 20%;
+                
+                font-size: 15px;
+                line-height: 23px;
+                letter-spacing: 3px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                margin-left: 20%;
+                
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: 2px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body {
+                margin-left: 10%;
+                
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 2px;
+            }
+        }
+
+	</style>
+	<!-- 
+	***** END CSS ***** 
+	-->
+
+
+	<!-- 
+	***** START JAVASCRIPT ***** 
+	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			// list one content
+			var one = [
+				'<a href="https://elissaeren.github.io/youare/">you are the audience</a>',
+                '<a href="https://elissaeren.github.io/interactivemedia324/exercise2/">it continues</a>',
+                "I sailed the wild, wild sea",
+                '<a href="https://2006conversationpieces.tumblr.com/">How to cross that divide</a>',
+                '<a href="https://issuu.com/nwponline">the Northwest</a>',
+                '<a href="https://elissaeren.github.io/interactivemedia323/project3/one.html">I was driving it&#39;s easy</a>',
+                '<a href="https://elissaeren.github.io/interactivemedia324/project1/">beginnings that&#39;s all</a>'
+			];
+
+			// list two content
+			var two = [
+				'<a href="https://elissaeren.github.io/youare/">you are the audience</a>',
+                '<a href="https://elissaeren.github.io/interactivemedia324/exercise2/">it continues</a>',
+                "I sailed the wild, wild sea",
+                '<a href="https://2006conversationpieces.tumblr.com/">How to cross that divide</a>',
+                '<a href="https://issuu.com/nwponline">the Northwest</a>',
+                '<a href="https://elissaeren.github.io/interactivemedia323/project3/one.html">I was driving it&#39;s easy</a>',
+                '<a href="https://elissaeren.github.io/interactivemedia324/project1/">beginnings that&#39;s all</a>'
+			];
+
+			// list three content
+			var three = [
+				"you are the audience",
+                "it continues",
+                "I sailed the wild, wild sea",
+                "I was driving it's easy",
+                "How to cross that divide",
+                "beginnings that's all",
+                "the Northwest"
+			];
+
+			// list four content
+			var four = [
+				"you are the audience",
+                "it continues",
+                "I sailed the wild, wild sea",
+                "I was driving it's easy",
+                "How to cross that divide",
+                "beginnings that's all",
+                "the Northwest"
+			];
+            
+            // list five content
+			var five = [
+				"you are the audience",
+                "it continues",
+                "I sailed the wild, wild sea",
+                "I was driving it's easy",
+                "How to cross that divide",
+                "beginnings that's all",
+                "the Northwest"
+			];
+            
+            // list six content
+			var six = [
+				"you are the audience",
+                "it continues",
+                "I sailed the wild, wild sea",
+                "I was driving it's easy",
+                "How to cross that divide",
+                "beginnings that's all",
+                "the Northwest"
+			];
+            
+            // list seven content
+			var seven = [
+				"you are the audience",
+                "it continues",
+                "I sailed the wild, wild sea",
+                "I was driving it's easy",
+                "How to cross that divide",
+                "beginnings that's all",
+                "the Northwest"
+			];
+
+			// This is a very common randomizing function.
+			// It takes a list (array) and returns one at random.
+			function select_random(x){
+				y = x[Math.floor(Math.random()*x.length)];
+				return y;
+			}
+
+			// This is the generator function
+			function generate(){
+
+				// Select a random item from each list
+				var selected_one = select_random(one);
+				var selected_two = select_random(two);
+				var selected_three = select_random(three);
+				var selected_four = select_random(four);
+                var selected_five = select_random(five);
+                var selected_six = select_random(six);
+                var selected_seven = select_random(seven);
+
+				// Make a paragraph and then add the selected (random) item from each list list
+				$('body').append('<p>');
+				$('body').append('<div class="list-one">' + selected_one + '</div>');
+				$('body').append('<div class="list-two">' + selected_two + '</div>');
+				$('body').append('<div class="list-three">' + selected_three + '</div>');
+				$('body').append('<div class="list-four">' + selected_four + '</div>');
+                $('body').append('<div class="list-five">' + selected_five + '</div>');
+                $('body').append('<div class="list-six">' + selected_six + '</div>');
+                $('body').append('<div class="list-seven">' + selected_seven + '</div>');
+				$('body').append('</p>');
+
+			}
+
+			// Run the generator every two seconds ("2000" in the code below)
+			function timeout() {
+			    setTimeout(function () {
+			        generate();
+			        timeout();
+			    }, 50);
+			}
+
+			generate();
+
+			timeout();
+			
+		});
+
+	</script>
+	<!-- 
+	***** END JAVASCRIPT ***** 
+	-->
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            Elissa
+        </div>
+    </nav>
+    
+    <div class=""></div>
+
+	<!--
+	This is the visible portion.
+
+	If you want your words or phrases to go side-by-side, change...
+
+	<div></div>
+	to
+	<span></span>
+
+	in the code below.
+	-->
+
+</body>
+
+</html>
