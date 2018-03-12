@@ -20,29 +20,14 @@
 		body {
 			background: #ffe9ec;
 			margin: auto;
-		}
-        
-        .generate {
-            margin-left: 4%;
-            margin-right: 11%; /* account for .bar right value bc that effects this overall value*/
-            margin-top: 8%;
-            
-            color: #ffffff;
             font-family: 'Inconsolata', monospace;
-			font-size: 160px;
-            /*line-height: 90px;*/
-            line-height: 95px;
-			letter-spacing: 4px;
-            text-align: right;
-			/*text-transform: uppercase;*/
-        }
+		}
         
         /* coding that influences name, more, and about*/
         nav {
             margin: auto;
             
             color: #000000;
-            font-family: 'Inconsolata', monospace;
 			font-size: 38px;
             line-height: 60px;
             
@@ -62,51 +47,49 @@
         /* overall coding for + and ? on top */
         .bar {
             position: fixed;
-            bottom: 50%;
+            bottom: 45%;
             right: 4%;
         }
         
         .more {}
         
         .more a:link {color: #000000;text-decoration: none;}
-
         .more a:visited {color: #000000; text-decoration: none;}
-
         .more a:hover {text-decoration: none;}
-
         .more a:active {color: #000000; text-decoration: none;}
-
         
         .about {}
+        
+        .generate {
+            margin-left: 4%;
+            margin-right: 11%; /* account for .bar right value bc that effects this overall value*/
+            margin-top: 8%;
+            
+            color: #ffffff;
+			font-size: 155px;
+            /*line-height: 90px;*/
+            line-height: 98px;
+			letter-spacing: 4px;
+            text-align: right;
+			/*text-transform: uppercase;*/
+        }
 
 		.list-one {} .list-two {} .list-three {} .list-four {} .list-five {} .list-six {} .list-seven {}
         
-        /* unvisited link */
-        a:link {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        /* visited link */
-        a:visited {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        /* mouse over link */
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* selected link */
-         a:active {
-             color: #ffffff;
-             text-decoration: none;
-        }
+        a:link {color: #ffffff; text-decoration: none;}
+        a:visited {color: #ffffff; text-decoration: none;}
+        a:hover {text-decoration: underline;}
+        a:active {color: #ffffff; text-decoration: none;}
 
 		p {
 			margin-bottom: 2em;
 		}
+        
+        footer {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
         
         /* Media Queries */
 
@@ -282,7 +265,7 @@
 			    setTimeout(function () {
 			        generate();
 			        timeout();
-			    }, 50);
+			    }, 2000);
 			}
 
 			generate();
@@ -329,6 +312,10 @@
 	   in the code below.
 	   -->
     </div>
+    
+    <footer>
+        Copyright &copy; 2018 Elissa Sorenson
+    </footer>
 
 </body>
 
