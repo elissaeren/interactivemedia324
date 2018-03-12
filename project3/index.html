@@ -19,21 +19,25 @@
 
 		body {
 			background: #ffe9ec;
-			margin-left: 3%;
+			margin: auto;
+		}
+        
+        .generate {
+            margin-left: 4%;
             margin-right: 15%;
             margin-top: 8%;
             
             color: #ffffff;
             font-family: 'Inconsolata', monospace;
-			font-size: 150px;
+			font-size: 160px;
             /*line-height: 90px;*/
             line-height: 95px;
 			letter-spacing: 4px;
             text-align: right;
 			/*text-transform: uppercase;*/
-		}
+        }
         
-        body .nav {
+        nav {
             margin: auto;
             align-content: center;
             
@@ -45,6 +49,27 @@
             text-align: center;
             letter-spacing: -.01em;
             text-transform: uppercase;
+        }
+        
+        .more {
+            float: left;
+        }
+        
+        /* unvisited link */
+        .more a:link {color: #000000;text-decoration: none;}
+
+        /* visited link */
+        .more a:visited {color: #000000; text-decoration: none;}
+
+        /* mouse over link */
+        .more a:hover {text-decoration: none;}
+
+        /* selected link */
+         .more a:active {color: #000000; text-decoration: none;}
+
+        
+        .about {
+            float: right;
         }
 
 		.list-one {} .list-two {} .list-three {} .list-four {} .list-five {} .list-six {} .list-seven {}
@@ -233,15 +258,15 @@
                 var selected_seven = select_random(seven);
 
 				// Make a paragraph and then add the selected (random) item from each list list
-				$('body').append('<p>');
-				$('body').append('<div class="list-one">' + selected_one + '</div>');
-				$('body').append('<div class="list-two">' + selected_two + '</div>');
-				$('body').append('<div class="list-three">' + selected_three + '</div>');
-				$('body').append('<div class="list-four">' + selected_four + '</div>');
-                $('body').append('<div class="list-five">' + selected_five + '</div>');
-                $('body').append('<div class="list-six">' + selected_six + '</div>');
-                $('body').append('<div class="list-seven">' + selected_seven + '</div>');
-				$('body').append('</p>');
+				$('.generate').append('<p>');
+				$('.generate').append('<div class="list-one">' + selected_one + '</div>');
+				$('.generate').append('<div class="list-two">' + selected_two + '</div>');
+				$('.generate').append('<div class="list-three">' + selected_three + '</div>');
+				$('.generate').append('<div class="list-four">' + selected_four + '</div>');
+                $('.generate').append('<div class="list-five">' + selected_five + '</div>');
+                $('.generate').append('<div class="list-six">' + selected_six + '</div>');
+                $('.generate').append('<div class="list-seven">' + selected_seven + '</div>');
+				$('.generate').append('</p>');
 
 			}
 
@@ -268,22 +293,32 @@
 
 <body>
     <nav>
+        <div class="more">
+            <a href="" target="_blank">+</a>
+        </div>
+        
         <div class="nav">
             &#60;Elissa&#62;
         </div>
+        
+        <div class="about">
+            ?
+        </div>
     </nav>
+    
+    <div class="generate">
+        <!--
+	   This is the visible portion.
 
-	<!--
-	This is the visible portion.
+	   If you want your words or phrases to go side-by-side, change...
 
-	If you want your words or phrases to go side-by-side, change...
+	   <div></div>
+	   to
+	   <span></span>
 
-	<div></div>
-	to
-	<span></span>
-
-	in the code below.
-	-->
+	   in the code below.
+	   -->
+    </div>
 
 </body>
 
