@@ -24,7 +24,7 @@
         
         .generate {
             margin-left: 4%;
-            margin-right: 15%;
+            margin-right: 11%; /* account for .bar right value bc that effects this overall value*/
             margin-top: 8%;
             
             color: #ffffff;
@@ -37,40 +37,47 @@
 			/*text-transform: uppercase;*/
         }
         
+        /* coding that influences name, more, and about*/
         nav {
             margin: auto;
-            align-content: center;
             
             color: #000000;
             font-family: 'Inconsolata', monospace;
 			font-size: 38px;
             line-height: 60px;
             
-            text-align: center;
             letter-spacing: -.01em;
+        }
+        
+        .name {
+            position: fixed;
+            right: 46%; /* account for .bar positioning bc 50% isn't true center*/
+            bottom: 88%;
+            
+            align-content: center;
+            text-align: center;
             text-transform: uppercase;
         }
         
-        .more {
-            float: left;
+        /* overall coding for + and ? on top */
+        .bar {
+            position: fixed;
+            bottom: 50%;
+            right: 4%;
         }
         
-        /* unvisited link */
+        .more {}
+        
         .more a:link {color: #000000;text-decoration: none;}
 
-        /* visited link */
         .more a:visited {color: #000000; text-decoration: none;}
 
-        /* mouse over link */
         .more a:hover {text-decoration: none;}
 
-        /* selected link */
-         .more a:active {color: #000000; text-decoration: none;}
+        .more a:active {color: #000000; text-decoration: none;}
 
         
-        .about {
-            float: right;
-        }
+        .about {}
 
 		.list-one {} .list-two {} .list-three {} .list-four {} .list-five {} .list-six {} .list-seven {}
         
@@ -293,16 +300,19 @@
 
 <body>
     <nav>
-        <div class="more">
-            <a href="" target="_blank">+</a>
+        <div class="bar">
+            <div class="more">
+                <a href="" target="_blank">+</a>
+            </div>
+            
+            <div class="about">
+                ?
+            </div>
         </div>
         
-        <div class="nav">
+        
+        <div class="name">
             &#60;Elissa&#62;
-        </div>
-        
-        <div class="about">
-            ?
         </div>
     </nav>
     
