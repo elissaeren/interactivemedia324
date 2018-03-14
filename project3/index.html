@@ -18,10 +18,17 @@
 		/* You can change the colors, font, and so on below */
 
 		body {
-			background: #ffe9ec;
+			/*background: #ffe9ec;*/
 			margin: auto;
             font-family: 'Inconsolata', monospace;
 		}
+        
+        #bg {
+            margin: auto;
+            position:absolute;
+            left:0;
+            right:0;
+        }
         
         /* coding that influences name, more, and about*/
         nav {
@@ -273,6 +280,14 @@
 			timeout();
 			
 		});
+        
+        
+        $(document).ready(function ran_col() { //function name
+                var color = '#'; // hexadecimal starting symbol
+                var letters = ['FFE9EC' /*pale pink*/, 'EDBBB4' /*mauve pink*/, '074F57' /*green teal blue*/]; //Set your colors here
+                color += letters[Math.floor(Math.random() * letters.length)];
+                document.getElementById('bg').style.background = color; // Setting the random color on your div element.
+            });
 
 	</script>
 	<!-- 
@@ -282,6 +297,8 @@
 </head>
 
 <body>
+<div id="bg"> <!-- main acts to cover all the same space as body, but is used for color generated bg-->
+    
     <nav>
         <div class="bar">
             <div class="more">
@@ -316,7 +333,8 @@
     <footer>
         Copyright &copy; 2018 Elissa Sorenson
     </footer>
-
+    
+</div>
 </body>
 
 </html>
