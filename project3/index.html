@@ -21,14 +21,38 @@
 			/*background: #ffe9ec;*/
 			margin: auto;
             font-family: 'Inconsolata', monospace;
-		}
+            
+            animation: colorchange 120s infinite; /* animation-name followed by duration in seconds*/
+            /* you could also use milliseconds (ms) or something like 2.5s */
+            -webkit-animation: colorchange 120s infinite; /* Chrome and Safari */
+        }
+
+        @keyframes colorchange
+        {
+            0%   {background: #FFE9EC;}
+            25%  {background: #EDBBB4;}
+            50%  {background: #074F57;}
+            75%  {background: #212b31;}
+            92%  {background: #775253;}
+            100% {background: #FFE9EC;}
+        }
+
+        @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+        {
+            0%   {background: #FFE9EC;}
+            25%  {background: #EDBBB4;}
+            50%  {background: #074F57;}
+            75%  {background: #212b31;}
+            92%  {background: #775253;}
+            100% {background: #FFE9EC;}
+        }
         
-        #bg {
+        /*#bg {
             margin: auto;
             position:absolute;
             left:0;
             right:0;
-        }
+        }*/
         
         /* coding that influences name, more, and about*/
         nav {
@@ -280,14 +304,6 @@
 			timeout();
 			
 		});
-        
-        
-        $(document).ready(function ran_col() { //function name
-                var color = '#'; // hexadecimal starting symbol
-                var letters = ['FFE9EC' /*pale pink*/, 'EDBBB4' /*mauve pink*/, '074F57' /*green teal blue*/]; //Set your colors here
-                color += letters[Math.floor(Math.random() * letters.length)];
-                document.getElementById('bg').style.background = color; // Setting the random color on your div element.
-            });
 
 	</script>
 	<!-- 
@@ -336,5 +352,15 @@
     
 </div>
 </body>
+    
+    
+    <!-- 
+$(document).ready(function ran_col() { //function name
+                var color = '#'; // hexadecimal starting symbol
+                var letters = ['FFE9EC' /*pale pink*/, 'EDBBB4' /*mauve pink*/, '074F57' /*green teal blue*/, '775253' /*purple mauve*/]; //Set your colors here
+                color += letters[Math.floor(Math.random() * letters.length)];
+                document.getElementById('bg').style.background = color; // Setting the random color on your div element.
+            });
+-->
 
 </html>
