@@ -22,9 +22,9 @@
 			margin: auto;
             font-family: 'Inconsolata', monospace;
             
-            animation: colorchange 500s infinite; /* animation-name followed by duration in seconds*/
+            animation: colorchange 120s infinite; /* animation-name followed by duration in seconds*/
             /* you could also use milliseconds (ms) or something like 2.5s */
-            -webkit-animation: colorchange 500s infinite; /* Chrome and Safari */
+            -webkit-animation: colorchange 120s infinite; /* Chrome and Safari */
         }
 
         @keyframes colorchange
@@ -122,108 +122,49 @@
             font-size: 13px;
         }
         
-        
         /* Media Queries */
-        
-        @media screen and (max-width: 5120px) /*for 27in screens*/ {
-            .generate {
-                margin-left: 6%;
-                margin-right: 8%; /* account for .bar right value bc that effects this overall value*/
-                margin-top: 8%;
-            
-                font-size: 200px;
-                line-height: 130px;
-                letter-spacing: 4px;
-            }
-            
-            /* overall coding for + and ? on top */
-            .bar {
-                bottom: 45%;
-                right: 4%;
-            }
-        }
-        
-        @media screen and (max-width: 2560px) {
-            .generate {
-                margin-left: 4%;
-                margin-right: 11%; /* account for .bar right value bc that effects this overall value*/
-                margin-top: 8%;
-            
-                font-size: 160px;
-                line-height: 98px;
-                letter-spacing: 4px;
-            }
-        }
 
         @media screen and (max-width: 1024px) {
-            .generate {
-                margin-left: 4%;
-                margin-right: 11%; /* account for .bar right value bc that effects this overall value*/
-                margin-top: 8%;
-            
-                font-size: 155px;
-                line-height: 98px;
-                letter-spacing: 4px;
+            body {
+                font-size: 18px;
+                line-height: 26px;
             }
         }
 
         @media screen and (max-width: 768px) {
-            .generate {
-                margin-left: 4%;
-                margin-right: 11%; /* account for .bar right value bc that effects this overall value*/
-                margin-top: 8%;
-            
-                font-size: 155px;
-                line-height: 98px;
-                letter-spacing: 4px;
+            body {
+                font-size: 18px;
+                line-height: 26px;
             }
         }
 
         @media screen and (max-width: 600px) {
-            .generate {
-                margin-left: 4%;
-                margin-right: 11%; /* account for .bar right value bc that effects this overall value*/
-                margin-top: 8%;
-            
-                font-size: 155px;
-                line-height: 98px;
-                letter-spacing: 4px;
+            body {
+                margin-left: 20%;
+                
+                font-size: 15px;
+                line-height: 23px;
+                letter-spacing: 3px;
             }
         }
 
         @media screen and (max-width: 480px) {
-            .generate {
-                margin-left: 4%;
-                margin-right: 12%; /* account for .bar right value bc that effects this overall value*/
-                margin-top: 8%;
-            
-                font-size: 46px;
-                line-height: 38px;
-                letter-spacing: 4px;
-            }
-            
-            /* overall coding for + and ? on top */
-            .bar {
-                bottom: 45%;
-                right: 6%;
+            body {
+                margin-left: 20%;
+                
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: 2px;
             }
         }
 
         @media screen and (max-width: 320px) {
-            .generate {
-                margin-left: 4%;
-                margin-right: 12%; /* account for .bar right value bc that effects this overall value*/
-                margin-top: 8%;
-            
-                font-size: 46px;
-                line-height: 38px;
-                letter-spacing: 4px;
-            }
-            
-            /* overall coding for + and ? on top */
-            .bar {
-                bottom: 45%;
-                right: 6%;
+            body {
+                margin-left: 10%;
+                
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 2px;
             }
         }
 
